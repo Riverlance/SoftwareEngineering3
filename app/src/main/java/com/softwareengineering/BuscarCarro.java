@@ -1,4 +1,4 @@
-package com.softwareengineering.softwareengineering3;
+package com.softwareengineering;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -22,7 +22,7 @@ public class BuscarCarro extends Activity implements OnClickListener {
   protected void onCreate(Bundle icicle) {
     super.onCreate(icicle);
 
-    repositorioCarro = RepositorioFactory.getRepositorioCarro();
+    repositorioCarro = RepositorioFactory.getRepositorioCarro(this);
 
     setContentView(R.layout.form_buscar_carro);
 

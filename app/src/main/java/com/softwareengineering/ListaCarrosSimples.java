@@ -1,4 +1,4 @@
-package com.softwareengineering.softwareengineering3;
+package com.softwareengineering;
 
 import java.util.List;
 
@@ -16,11 +16,10 @@ import android.widget.ListAdapter;
  * 
  */
 public class ListaCarrosSimples extends ListActivity {
-
   @Override
   public void onCreate(Bundle icicle) {
     super.onCreate(icicle);
-    RepositorioCarro repositorio = RepositorioFactory.getRepositorioCarro();
+    RepositorioCarro repositorio = RepositorioFactory.getRepositorioCarro(this);
     List<Carro> carros = repositorio.listarCarros();
     ListAdapter adaptador = new CarroListAdapter(this, carros);
     setListAdapter(adaptador);

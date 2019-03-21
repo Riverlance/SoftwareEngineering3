@@ -1,4 +1,4 @@
-package com.softwareengineering.softwareengineering3;
+package com.softwareengineering;
 
 import java.util.List;
 
@@ -34,7 +34,7 @@ public class ListaCarrosSimples2 extends ListActivity {
   @Override
   public void onCreate(Bundle icicle) {
     super.onCreate(icicle);
-    repositorio = RepositorioFactory.getRepositorioCarro();
+    repositorio = RepositorioFactory.getRepositorioCarro(this);
     // Atualiza a lista com os carros.
     atualizarLista();
   }

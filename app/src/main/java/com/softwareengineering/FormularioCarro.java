@@ -1,4 +1,4 @@
-package com.softwareengineering.softwareengineering3;
+package com.softwareengineering;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -39,7 +39,7 @@ public class FormularioCarro extends Activity {
   protected void onCreate(Bundle icicle) {
     super.onCreate(icicle);
 
-    repositorioCarro = RepositorioFactory.getRepositorioCarro();
+    repositorioCarro = RepositorioFactory.getRepositorioCarro(this);
 
     setContentView(R.layout.formulario_carro);
 

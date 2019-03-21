@@ -1,4 +1,6 @@
-package com.softwareengineering.softwareengineering3;
+package com.softwareengineering;
+
+import android.content.Context;
 
 /**
  * Factory para o repositorio do carro
@@ -10,10 +12,10 @@ public class RepositorioFactory {
 
   private static RepositorioCarro repositorio;
 
-  public static RepositorioCarro getRepositorioCarro() {
+  public static RepositorioCarro getRepositorioCarro(Context context) {
     if (repositorio == null) {
       //repositorio = new RepositorioCarroFake();
-      repositorio = new RepositorioCarroSQLite();
+      repositorio = new RepositorioCarroSQLite(context);
     }
     return repositorio;
   }

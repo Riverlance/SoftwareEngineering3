@@ -1,4 +1,4 @@
-package com.softwareengineering.softwareengineering3;
+package com.softwareengineering;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
