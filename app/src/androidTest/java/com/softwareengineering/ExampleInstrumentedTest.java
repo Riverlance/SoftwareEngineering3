@@ -1,4 +1,4 @@
-package com.softwareengineering.softwareengineering3;
+package com.softwareengineering;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

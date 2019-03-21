@@ -1,5 +1,8 @@
 package com.softwareengineering.softwareengineering3;
 
+import com.softwareengineering.softwareengineering3.Carro;
+import com.softwareengineering.softwareengineering3.RepositorioCarro;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;

@@ -12,7 +12,8 @@ public class RepositorioFactory {
 
   public static RepositorioCarro getRepositorioCarro() {
     if (repositorio == null) {
-      repositorio = new RepositorioCarroFake();
+      //repositorio = new RepositorioCarroFake();
+      repositorio = new RepositorioCarroSQLite();
     }
     return repositorio;
   }
